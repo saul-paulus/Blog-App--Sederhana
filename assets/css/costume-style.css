@@ -1,0 +1,370 @@
+/* reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: #e0e0e0;
+  font-family: "myriad_set_protext", sans-serif;
+}
+ul {
+  list-style: none;
+}
+
+/* Costume style */
+
+/* costume header dan nav */
+
+.header-nav {
+  min-width: 100%;
+  z-index: 9999;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+.contain {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.navbar {
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.navbar-logo {
+  display: flex;
+}
+.navbar-logo img {
+  width: 30px;
+  height: 30px;
+}
+.navbarNavigasi {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.767);
+  position: absolute;
+  top: 18px;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  animation: animasiMenu 0.8s;
+}
+.showMenu {
+  display: block;
+}
+
+.navbarNavigasi li {
+  text-align: center;
+  padding: 15px 0;
+}
+
+.navbarNavigasi li a {
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+}
+.navbarNavigasi li a,
+.navbar-logo,
+.menu-tombol span {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+/* Menu tombol */
+main {
+  position: relative;
+}
+.menu-tombol {
+  display: flex;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.menu-tombol span {
+  display: block;
+  background-color: rgb(236, 231, 231);
+  width: 25px;
+  height: 2px;
+  border-radius: 50px;
+}
+/* Akhir Menu Tombol */
+
+.navbarNavigasi li:hover a,
+.navbar-logo:hover,
+.menu-tombol:hover span {
+  opacity: 1;
+}
+/* membuat costume untuk main */
+.main-contain {
+  display: flex;
+  flex-direction: column;
+}
+.main-contain h1 {
+  margin-top: -3px;
+  font-size: 25px;
+  padding: 10px;
+  font-weight: bold;
+}
+.main-contain h3 {
+  font-size: 17px;
+  font-weight: 600;
+}
+.main-contain h3 span {
+  color: #747272;
+  margin-left: 10px;
+}
+.main-contain p {
+  font-size: 16px;
+  line-height: 30px;
+  color: #616060;
+}
+.main-contain .readMore {
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  background-color: rgb(60, 60, 236);
+  opacity: 0.9;
+  padding: 3px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.main-contain .readMore:hover {
+  opacity: 1;
+  background-color: rgb(0, 0, 255);
+}
+
+.contentOne img {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  border-bottom: 1px solid salmon;
+  border-radius: 10px 10px 0 0;
+}
+.contentOne section {
+  padding: 10px;
+}
+/* costume aside */
+aside {
+  box-sizing: border-box;
+  text-align: center;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+}
+.myProfile {
+  padding-top: 30px;
+}
+.myProfile img {
+  width: 150px;
+  height: 150px;
+}
+.myProfile h2 {
+  font-size: 26px;
+}
+.myProfile p {
+  margin-top: -15px;
+  padding: 10px;
+  font-size: 15px;
+  color: #363636;
+  text-align: justify;
+}
+hr {
+  border: 2px solid rgb(231, 228, 228);
+  border-radius: 20px;
+  width: 200px;
+}
+.mySosmed {
+  margin-bottom: 20px;
+}
+.mySosmed a {
+  padding: 10px;
+  text-decoration: none;
+  opacity: 0.9;
+  transition: 0.3s;
+}
+.mySosmed img {
+  width: 35px;
+  height: 35px;
+}
+.mySosmed a:hover {
+  opacity: 1;
+}
+
+/* costume Recent Post*/
+.recentPost h2 {
+  padding-top: 20px;
+  font-weight: 500;
+}
+.recentPost h3 {
+  color: #242323;
+  font-size: 17px;
+  font-weight: 400;
+}
+.recentPost hr {
+  margin-top: -10px;
+}
+.recentPost a {
+  font-size: 14px;
+  text-align: justify;
+  text-decoration: none;
+}
+.recentPost p {
+  padding: 0 30px 20px 30px;
+  line-height: 25px;
+  color: #313131;
+}
+.recentPost P:hover {
+  color: blue;
+}
+
+/*Costume contact Whatsapp */
+.contactWhatsapp img {
+  position: fixed;
+  right: 0;
+  bottom: 100px;
+  left: 85%;
+}
+
+/* costume membuat card */
+.card {
+  color: black;
+  border-radius: 7px;
+  margin-top: 5px;
+  box-shadow: 0 0 10px 3px rgb(50, 51, 50);
+  background-color: rgba(255, 255, 255, 0.829);
+}
+.card-1 {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  border-radius: 7px;
+  box-shadow: 0 0 10px 3px rgb(50, 51, 50);
+  background-color: rgba(255, 255, 255, 0.829);
+}
+
+/* ========================================= */
+
+/* costume untuk membuat footer */
+footer {
+  color: #e0e0e0;
+  margin-top: 50px;
+  background-color: black;
+  text-align: center;
+  padding: 20px;
+}
+
+/* costume Animate */
+@keyframes animasiMenu {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Costume untuk font*/
+
+@font-face {
+  font-family: "myriad_set_protext";
+  src: url("../font/myriad-set-pro-400-text-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* costume untuk responsive */
+
+@media (min-width: 576px) {
+  .contain {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+/* === responsive media 768px ========== */
+@media (min-width: 768px) {
+  .contain {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  .navbarNavigasi {
+    display: flex;
+    justify-content: space-around;
+    min-width: 70%;
+    position: relative;
+    top: -14px;
+    height: 0;
+    transition: 2s;
+    animation: animasiMenu 1s;
+  }
+  .menu-tombol {
+    display: none;
+  }
+  .navbarNavigasi li {
+    text-align: none;
+    padding: 0;
+  }
+  /* costume responsive main */
+  .main-contain {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+  .main-utama {
+    margin-top: 80px;
+  }
+  .content {
+    flex: 1;
+  }
+
+  aside {
+    margin-left: 20px;
+    flex: 2;
+    margin-top: 80px;
+  }
+  .contactWhatsapp img {
+    position: fixed;
+    right: 0;
+    bottom: 100px;
+    left: 95%;
+  }
+}
+
+/*====== responsive media 992px ==========*/
+@media (min-width: 992px) {
+  .navbarNavigasi {
+    transition: 2s;
+    min-width: 60%;
+  }
+  aside {
+    flex-grow: 1;
+    margin-left: 10%;
+  }
+  .myProfile img {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+/*====== Responsive media 1200px =========*/
+@media (min-width: 1200px) {
+  .navbarNavigasi {
+    transition: 2s;
+    min-width: 50%;
+  }
+  .myProfile img {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
